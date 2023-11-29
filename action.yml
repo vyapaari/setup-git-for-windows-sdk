@@ -6,11 +6,11 @@ branding:
   color: blue
 inputs:
   flavor:
-    required: false
+    required: true
     description: 'The subset (if any) of the SDK: minimal, makepkg-git, build-installers, or full'
-    default: 'minimal'
+    default: 'makepkg-git'
   architecture:
-    required: false
+    required: true
     description: 'The architecture of the SDK: x86_64, i686 or aarch64. Note that "aarch64" only supports the "full" flavor for now.'
     default: 'x86_64'
   msys:
@@ -18,7 +18,7 @@ inputs:
     description: 'Whether to start in MSYS mode (defaults to false)'
     default: 'false'
   path:
-    required: false
+    required: true
     description: 'Where to write the SDK files'
     default: ''
   cleanup:
@@ -26,7 +26,7 @@ inputs:
     description: 'Whether to clean up SDK files. This is only needed on self-hosted runners that are reused for multiple jobs.'
     default: 'false'
   verbose:
-    required: false
+    required: true
     description: 'Whether to log files as they are extracted'
     default: '250'
   cache:
