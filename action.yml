@@ -8,8 +8,8 @@ inputs:
   flavor:
     required: true
     description: 'The subset (if any) of the SDK: minimal, makepkg-git, build-installers, or full'
-    default: 'makepkg-git'
-  architecture:
+    default: 'full'
+  architecture: 
     required: true
     description: 'The architecture of the SDK: x86_64, i686 or aarch64. Note that "aarch64" only supports the "full" flavor for now.'
     default: 'x86_64'
